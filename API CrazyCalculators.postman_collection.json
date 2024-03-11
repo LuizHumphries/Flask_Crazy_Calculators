@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "036a2f5f-0da2-4409-b5e8-08828e000d67",
+		"name": "API CrazyCalculators",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32499924"
+	},
+	"item": [
+		{
+			"name": "POST Calculator 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/calculator/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"calculator",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Calculator 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numbers\": [2.12, 4.62, 1.32]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/calculator/2",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"calculator",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Calculator 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numbers\": [1,2,3,400]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/calculator/3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"calculator",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Calculator 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numbers\": [1,2,3,4]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/calculator/4",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"calculator",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

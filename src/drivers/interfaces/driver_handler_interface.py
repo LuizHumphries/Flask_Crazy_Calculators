@@ -14,3 +14,7 @@ class DriverHandlerInterface(ABC):
     @abstractmethod
     def multiply_all(self, numbers: List[float]) -> float:
         pass
+
+    @abstractmethod
+    def avarage(self, numbers: List[float]) -> float:
+        pass

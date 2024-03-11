@@ -14,3 +14,6 @@ class NumpyHandler(DriverHandlerInterface):
     
     def multiply_all(self, numbers: List[float]) -> float:
         return self.__np.prod(numbers)
+    
+    def avarage(self, numbers: List[float]) -> float:
+        return self.__np.average(numbers)
