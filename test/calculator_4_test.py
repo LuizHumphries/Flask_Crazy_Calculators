@@ -11,16 +11,16 @@ class MockDriverHandler:
         return 10
 
 def test_calculate_integration():
-    mock_request = MockRequest(body={ "numbers": [2.12, 4.62, 1.32] })
+    mock_request = MockRequest(body={ "numbers": [1, 2, 3 ,4] })
     driver = NumpyHandler()
     calculate_4 = Calculator4(driver)
     formated_reponse = calculate_4.calculate(mock_request)
 
     assert isinstance(formated_reponse, dict)
-    assert formated_reponse == {'data': {'Calculator': 4, 'result': 2.686666666666667}}
+    assert formated_reponse == {'data': {'Calculator': 4, 'result': 2.5}}
 
 def test_calculate():
-    mock_request = MockRequest(body={ "numbers": [2.12, 4.62, 1.32] })
+    mock_request = MockRequest(body={ "numbers": [1, 2, 3, 4] })
     driver = MockDriverHandler()
     calculate_4 = Calculator4(driver)
     formated_reponse = calculate_4.calculate(mock_request)
